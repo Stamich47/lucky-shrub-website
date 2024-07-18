@@ -15,7 +15,7 @@ header > img {
 .container {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: 1fr 0.5fr 2fr 1fr;
+  grid-template-rows: 0.5fr 0.25fr 2fr 1fr;
   gap: 10px;
   grid-template-areas:
     '. . header header . .'
@@ -45,28 +45,50 @@ nav > ul > li {
 main {
   grid-area: main;
   display: grid;
-  grid-template-columns: repeat(3, 33.333%);
-  grid-template-rows: repeat(2, 50%);
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   grid-template-areas:
     'promo promo promo'
     'left middle right';
   justify-items: center;
   text-align: center;
-  gap: 10px;
   margin-bottom: 10px;
+  padding: 20px;
 }
 
 .promo {
   grid-area: promo;
-  border: 1px solid black;
-  padding: 20px;
   align-content: center;
+  position: relative;
+  max-width: 700px;
+}
+
+.promo img {
+  max-height: 100%;
+  max-width: 100%;
+  min-width: 600px;
   border-radius: 20px;
+  box-shadow: 3px 7px 10px rgb(30, 75, 47);
+}
+
+.promo > h2 {
+  margin-bottom: 10px;
+}
+
+.promo > .text {
+  font-size: 20px;
+  position: absolute;
+  color: white;
+  top: 15%;
+  left: 3%;
+  -webkit-text-stroke: 0.1px;
+  -webkit-text-stroke-color: black;
 }
 
 .art {
   border: 1px solid black;
   border-radius: 20px;
+  margin: 20px;
 }
 
 .art-left {
