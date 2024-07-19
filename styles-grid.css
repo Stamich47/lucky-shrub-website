@@ -15,10 +15,10 @@ header > img {
 .container {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: 0.5fr 0.25fr 2fr 1fr;
+  grid-template-rows: 0.5fr 0.25fr 2fr 0.25fr;
   gap: 10px;
   grid-template-areas:
-    '. . header header . .'
+    'header header header header header header'
     'nav nav nav nav nav nav'
     'main main main main main main'
     'footer footer footer footer footer footer';
@@ -72,7 +72,7 @@ main {
 }
 
 .promo > h2 {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .promo > .text {
@@ -83,12 +83,14 @@ main {
   left: 3%;
   -webkit-text-stroke: 0.1px;
   -webkit-text-stroke-color: black;
+  text-align: left;
 }
 
 .art {
   border: 1px solid black;
   border-radius: 20px;
   margin: 20px;
+  align-content: center;
 }
 
 .art-left {
@@ -107,7 +109,6 @@ main {
   display: flex;
   grid-area: logo;
   justify-content: center;
-  padding-bottom: 40px;
 }
 
 .copy {
