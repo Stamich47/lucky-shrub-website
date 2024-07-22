@@ -81,7 +81,7 @@ main {
   grid-area: main;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 0.5fr 0.5fr;
+  grid-template-rows: auto;
   grid-template-areas:
     'promo promo promo'
     'div-art div-art div-art';
@@ -107,6 +107,7 @@ main {
   padding: 30px;
   grid-area: services;
   align-content: center;
+  color: rgb(7, 48, 42);
 }
 
 .promo {
@@ -133,6 +134,7 @@ main {
   background-color: rgba(51, 196, 177, 0.171);
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  color: rgb(7, 48, 42);
 }
 
 .text {
@@ -225,6 +227,7 @@ main {
 
 .art > h3 {
   align-self: center;
+  color: rgb(7, 48, 42);
 }
 
 .art img {
@@ -233,6 +236,7 @@ main {
 
 .art-text {
   grid-area: art-text;
+  color: rgb(7, 48, 42);
 }
 
 .logo {
