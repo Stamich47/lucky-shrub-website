@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+  margin: auto;
+  /* max-width: 1200px; */
+  background-color: #e6ebe7;
+}
+
+header > img {
+  width: 80px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  gap: 10px;
+  grid-template-areas:
+    'header'
+    'nav'
+    'main'
+    'footer';
+}
+
+header {
+  grid-area: header;
+  margin: auto;
+  margin-top: 5vh;
+}
+
+nav {
+  grid-area: nav;
+  margin: 30px auto;
+  padding-left: 40px;
+}
+
+nav > ul li {
+  display: inline-block;
+  margin: auto;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+
+nav > ul :nth-child(4) {
+  border-right: none;
+}
+
+nav > ul :nth-child(1) {
+  border-left: none;
+}
+
+a {
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 2px;
+  font-size: 0.9em;
+}
+
+a:link {
+  text-decoration: none;
+  color: rgb(25, 10, 82);
+}
+
+a:visited {
+  text-decoration: none;
+  color: rgb(25, 10, 82);
+}
+
+a:hover {
+  color: rgb(16, 109, 109);
+}
+
+main {
+  grid-area: main;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  grid-template-areas:
+    'about-title'
+    'about-text';
+  justify-items: center;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.logo {
+  display: flex;
+  grid-area: logo;
+  justify-content: center;
+  margin-right: 20px;
+}
+
+.logo > img {
+  max-width: 40px;
+}
+
+.copy {
+  grid-area: copy;
+  align-self: flex-end;
+}
+
+footer {
+  display: grid;
+  grid-area: footer;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: 'logo copy';
+  margin-bottom: 20px;
+}
+
+.about-us-container {
+  display: grid;
+}
+
+main > h2 {
+  grid-area: about-title;
+  margin-bottom: 20px;
+}
+
+main > p {
+  grid-area: about-text;
+}

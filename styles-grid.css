@@ -279,3 +279,7 @@ footer {
   align-self: center;
   padding: 5px;
 }
+
+.about-us-container {
+  display: grid;
+}
