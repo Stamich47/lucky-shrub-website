@@ -36,24 +36,26 @@ header {
 nav {
   grid-area: nav;
   margin: 30px auto;
-  padding-left: 40px;
 }
 
 nav > ul li {
   display: inline-block;
   margin: auto;
-  padding-left: 2vw;
-  padding-right: 2vw;
   border-left: 1px solid black;
   border-right: 1px solid black;
+  width: 100px;
+  padding: 0 12px;
+  text-align: center;
 }
 
 nav > ul :nth-child(4) {
   border-right: none;
+  text-align: start;
 }
 
 nav > ul :nth-child(1) {
   border-left: none;
+  text-align: end;
 }
 
 a {
@@ -86,17 +88,19 @@ main {
     'about-title'
     'about-text';
   justify-items: center;
-  margin-bottom: 10px;
-  margin-top: 20px;
+  margin: auto;
   padding-left: 60px;
   padding-right: 60px;
+  max-width: 800px;
+  color: rgb(7, 48, 42);
 }
 
 .logo {
+  margin-top: 40px;
   display: flex;
   grid-area: logo;
-  justify-content: center;
-  margin-right: 20px;
+  justify-content: end;
+  margin-right: 40px;
 }
 
 .logo > img {
@@ -117,10 +121,6 @@ footer {
   margin-bottom: 20px;
 }
 
-.about-us-container {
-  display: grid;
-}
-
 main > h2 {
   grid-area: about-title;
   margin-bottom: 20px;
@@ -128,4 +128,29 @@ main > h2 {
 
 main > p {
   grid-area: about-text;
+}
+
+@media (max-width: 540px) {
+  nav {
+    font-size: 2.5vw;
+    grid-area: nav;
+    margin: 10px auto;
+  }
+
+  nav > ul li {
+    display: inline-block;
+    margin: auto;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    width: 18vw;
+    text-align: center;
+  }
+
+  nav > ul :nth-child(4) {
+    border-right: none;
+  }
+
+  nav > ul :nth-child(1) {
+    border-left: none;
+  }
 }

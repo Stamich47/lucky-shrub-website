@@ -36,7 +36,6 @@ header {
 nav {
   grid-area: nav;
   margin: 30px auto;
-  /* padding-left: 40px; */
 }
 
 nav > ul li {
@@ -118,7 +117,8 @@ main {
   display: flex;
   flex-direction: column;
   position: relative;
-  max-width: 90vw;
+  width: 90vw;
+  max-width: 1200px;
   box-shadow: 3px 5px 15px rgb(30, 75, 47);
   border-radius: 20px;
   margin-bottom: 10px;
@@ -141,12 +141,12 @@ main {
 }
 
 .text {
-  font-size: 2vw;
+  font-size: 2.5vw;
   position: absolute;
   color: white;
-  top: 16%;
+  top: 20%;
   left: 3%;
-  /* transform: translate(0%, -5%); */
+  transform: translate(0%, -5%);
   text-align: left;
   text-shadow: 2px 2px 5px rgb(14, 11, 8);
 }
@@ -159,13 +159,12 @@ main {
 .art {
   border-radius: 20px;
   align-content: center;
-  max-width: 100vw;
+  max-width: 33vw;
   background-color: rgba(51, 196, 177, 0.171);
   box-shadow: 3px 7px 10px rgb(30, 75, 47);
 }
 
 .art-left {
-  max-width: 33vw;
   display: grid;
   grid-area: left;
   grid-template-columns: 1fr;
@@ -177,7 +176,6 @@ main {
 }
 
 .art-middle {
-  max-width: 33vw;
   display: grid;
   grid-area: middle;
   grid-template-columns: 1fr;
@@ -189,7 +187,6 @@ main {
 }
 
 .art-right {
-  max-width: 33vw;
   display: grid;
   grid-area: right;
   grid-template-columns: 1fr;
@@ -240,6 +237,9 @@ main {
 .art-text {
   grid-area: art-text;
   color: rgb(7, 48, 42);
+  font-size: 1.5vw;
+  align-self: center;
+  padding: 10px;
 }
 
 .logo {
@@ -275,14 +275,4 @@ footer {
 .promo:hover {
   box-shadow: 3px 7px 30px rgb(30, 75, 47);
   transition: 0.75s;
-}
-
-.art-text {
-  font-size: 1.5vw;
-  align-self: center;
-  padding: 5px;
-}
-
-.about-us-container {
-  display: grid;
 }
