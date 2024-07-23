@@ -144,6 +144,8 @@ main > p {
     border-right: 1px solid black;
     width: 18vw;
     text-align: center;
+    padding: 0px 5px;
+    text-shadow: 2px 2px 5px rgb(151, 214, 211);
   }
 
   nav > ul :nth-child(4) {
