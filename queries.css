@@ -138,7 +138,7 @@
     font-size: 3vw;
   }
 
-  .art-text {
+  .art > .art-text {
     font-size: 4vw;
     align-items: center;
     padding: 10px;
@@ -191,15 +191,28 @@
   }
 
   .art {
-    border-radius: 20px;
-    align-content: center;
-    max-width: 20vw;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
     background-color: rgba(51, 196, 177, 0.171);
     box-shadow: 3px 7px 10px rgb(30, 75, 47);
+    border-radius: 20px;
   }
 
-  .art-text {
-    font-size: 20px;
+  .art > h3 {
+    color: rgb(7, 48, 42);
     padding: 20px;
+    font-size: 28px;
+  }
+
+  .art > .art-text {
+    color: rgb(7, 48, 42);
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 20px;
+  }
+
+  .art > img {
+    width: 100%;
   }
 }

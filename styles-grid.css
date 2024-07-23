@@ -156,92 +156,6 @@ main {
   list-style-type: none;
 }
 
-.art {
-  border-radius: 20px;
-  align-content: center;
-  max-width: 33vw;
-  background-color: rgba(51, 196, 177, 0.171);
-  box-shadow: 3px 7px 10px rgb(30, 75, 47);
-}
-
-.art-left {
-  display: grid;
-  grid-area: left;
-  grid-template-columns: 1fr;
-  grid-template-rows: 0.5fr 1fr 1fr;
-  grid-template-areas:
-    'heading-le'
-    'img-le'
-    'art-text';
-}
-
-.art-middle {
-  display: grid;
-  grid-area: middle;
-  grid-template-columns: 1fr;
-  grid-template-rows: 0.5fr 1fr 1fr;
-  grid-template-areas:
-    'heading-mi'
-    'img-mi'
-    'art-text';
-}
-
-.art-right {
-  display: grid;
-  grid-area: right;
-  grid-template-columns: 1fr;
-  grid-template-rows: 0.5fr 1fr 1fr;
-  grid-template-areas:
-    'heading-ri'
-    'img-ri'
-    'art-text';
-}
-
-.art-left > img {
-  grid-area: img-le;
-  align-content: center;
-  max-width: 100%;
-}
-
-.art-middle > img {
-  align-content: center;
-  grid-area: img-mi;
-  max-width: 100%;
-}
-
-.art-right > img {
-  align-content: center;
-  grid-area: img-ri;
-  max-width: 100%;
-}
-
-.art-right > h3 {
-  grid-area: heading-ri;
-}
-.art-middle > h3 {
-  grid-area: heading-mi;
-}
-.art-left > h3 {
-  grid-area: heading-le;
-}
-
-.art > h3 {
-  align-self: center;
-  color: rgb(7, 48, 42);
-}
-
-.art img {
-  box-sizing: border-box;
-}
-
-.art-text {
-  grid-area: art-text;
-  color: rgb(7, 48, 42);
-  font-size: 1.5vw;
-  align-self: center;
-  padding: 10px;
-}
-
 .logo {
   display: flex;
   grid-area: logo;
@@ -265,6 +179,7 @@ footer {
   grid-template-rows: 1fr;
   grid-template-areas: 'logo copy';
   margin-bottom: 20px;
+  margin-top: 40px;
 }
 
 .art:hover {
@@ -275,4 +190,29 @@ footer {
 .promo:hover {
   box-shadow: 3px 7px 30px rgb(30, 75, 47);
   transition: 0.75s;
+}
+
+.art {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  background-color: rgba(51, 196, 177, 0.171);
+  box-shadow: 3px 7px 10px rgb(30, 75, 47);
+  border-radius: 20px;
+}
+
+.art > h3 {
+  color: rgb(7, 48, 42);
+  padding: 20px;
+}
+
+.art > .art-text {
+  color: rgb(7, 48, 42);
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 2vw;
+}
+
+.art > img {
+  width: 100%;
 }
