@@ -11,7 +11,7 @@
   }
 
   nav {
-    font-size: 2vw;
+    font-size: 2.5vw;
     grid-area: nav;
     margin: 10px auto;
   }
@@ -21,7 +21,8 @@
     margin: auto;
     border-left: 1px solid black;
     border-right: 1px solid black;
-    width: 14vw;
+    width: 18vw;
+    padding: 0px 2vw;
     text-align: center;
   }
 
